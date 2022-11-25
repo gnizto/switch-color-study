@@ -37,6 +37,7 @@ body {
 article {
   width: 30rem;
   margin: 2rem auto;
+  padding: 0 0.8rem;
 }
 
 article p {
