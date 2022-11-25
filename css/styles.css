@@ -28,24 +28,43 @@
   --text-color: rgb(43, 255, 0);
 }
 
-html{
-  height: 100vh;
-}
-
 body {
   font-family: sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
 }
 
+h1 {
+  line-height: 4rem;
+  text-align: center;
+}
+
+.articles-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 article {
   width: 30rem;
-  margin: 2rem auto;
+  margin: 0 auto;
   padding: 0 0.8rem;
+  /* To fix padding overflow width */
+  box-sizing: border-box;
 }
+
+/* For mobile */
+@media (max-width: 500px){
+  article {
+    width: 100vw;
+  }
+}
+
 
 article p {
   opacity: 0.7;
+  text-align: justify;
 }
 
 ul {
