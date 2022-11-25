@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root:has(#light:checked) {
+  --bg-color: white;
+  --text-color: black;
+}
+
+:root:has(#dark:checked) {
+  --bg-color: black;
+  --text-color: white;
+}
+
+:root:has(#green:checked) {
+  --bg-color: rgb(200, 255, 200);;
+  --text-color: rgb(13, 122, 13);;
+}
+
+:root:has(#blue:checked) {
+  --bg-color: rgb(200, 226, 255);
+  --text-color: rgb(0, 123, 255);
+}
+
+:root:has(#hacker:checked) {
+  --bg-color: black;
+  --text-color: rgb(43, 255, 0);
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+article {
+  width: 30rem;
+  margin: 2rem auto;
+}
+
+article p {
+  opacity: 0.7;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  background-color: white;
+  box-shadow: 0 0 1rem rgb(0 0 0 / 0.2);
+  
+  position: fixed;
+  padding: 1rem;
+  border-radius: 14px;
+
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+input[name="theme"] {
+  --input-color: black;
+  appearance: none;
+  border: 2px solid var(--input-color);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+input[name="theme"]:checked {
+  --input-color: black;
+  background-color: var(--input-color);
+}
+
+#light {
+  --input-color: rgb(186, 186, 186);
+}
+
+#dark {
+  --input-color: black;
+}
+
+#green {
+  --input-color: rgb(13, 122, 13);
+}
+
+#blue {
+  --input-color: rgb(0, 123, 255);
+}
+
+#hacker {
+  --input-color: rgb(43, 255, 0);
+}
