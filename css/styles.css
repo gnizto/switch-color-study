@@ -3,27 +3,27 @@
   padding: 0;
 }
 
-:root:has(#light:checked) {
+.light, :root:has(#light:checked) {
   --bg-color: white;
   --text-color: black;
 }
 
-:root:has(#dark:checked) {
+.dark, :root:has(#dark:checked) {
   --bg-color: black;
   --text-color: white;
 }
 
-:root:has(#green:checked) {
+.green, :root:has(#green:checked) {
   --bg-color: rgb(200, 255, 200);;
   --text-color: rgb(13, 122, 13);;
 }
 
-:root:has(#blue:checked) {
+.blue, :root:has(#blue:checked) {
   --bg-color: rgb(200, 226, 255);
   --text-color: rgb(0, 123, 255);
 }
 
-:root:has(#hacker:checked) {
+.hacker, :root:has(#hacker:checked) {
   --bg-color: black;
   --text-color: rgb(43, 255, 0);
 }
