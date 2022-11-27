@@ -9,12 +9,33 @@
     <title>Theme Switcher</title>
 </head>
 <body>
+  <header>
+    <ul id="contacts">
+      <li>
+        <a class="contact-url" href="https://www.linkedin.com/in/gnizto/?locale=en_US">
+          <div class="contact-item" title="Author's LinkedIn">
+            <img class="contact-logo" src="./assets/img/linkedin-logo.svg" alt="Author's LinkedIn">
+            <p class="contact-text">LinkedIn</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="contact-url" href="https://github.com/gnizto">
+          <div class="contact-item" title="Author's GitHub">
+            <img class="contact-logo" src="./assets/img/github-logo.svg" alt="Author's GitHub">
+            <p class="contact-text">GitHub</p>
+          </div>
+          </a>
+      </li>
+    </ul>
+  </header>
+  
   <h1>Theme Switcher</h1>
   <div class="articles-container">
     <article>
       <h2>About This Page</h2>
       <p>
-        Click the following link to access the project's Github repository and check out the project details, objective and idea: <br>
+        Click the following link to access the project's GitHub repository and check out the project details, objective and idea: <br>
         <a href="https://github.com/gnizto/theme-switcher">Theme Switcher</a>
       </p>
     </article>
@@ -33,7 +54,7 @@
     </article>
   </div>
 
-  <ul>
+  <ul class="themes">
     <li><input type="radio" name="theme" id="light" checked></li>
     <li><input type="radio" name="theme" id="dark"></li>
     <li><input type="radio" name="theme" id="green"></li>

@@ -28,6 +28,45 @@
   --text-color: rgb(43, 255, 0);
 }
 
+header {
+  color: black;
+  background-color: white;
+  padding: 0.3rem 0.8rem;
+}
+
+/* region contacts */
+ul#contacts {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-url {
+  text-decoration: none;
+}
+
+.contact-logo {
+  width: 38px;
+  height: 38px;
+}
+
+.contact-text {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 500px) {
+  ul#contacts {
+    justify-content: center;
+  }
+}
+/* endregion contacts */
+
 body {
   font-family: sans-serif;
   background-color: var(--bg-color);
@@ -72,7 +111,7 @@ a, a:active, a:visited {
   color: inherit;
 }
 
-ul {
+ul.themes {
   display: flex;
   list-style: none;
   gap: 1rem;
