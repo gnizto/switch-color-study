@@ -67,6 +67,11 @@ article p {
   text-align: justify;
 }
 
+a, a:active, a:visited {
+  font-weight: bold;
+  color: inherit;
+}
+
 ul {
   display: flex;
   list-style: none;
