@@ -86,7 +86,45 @@ header {
   }
 
   #btn-menu-mobile {
+    display: flex;
+    gap: .5rem;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  #menu-bars {
     display: block;
+    color: black;
+    border-top: 3px solid;
+    width: 25px;
+  }
+
+  #menu-bars::after, #menu-bars::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .25s;
+    position: relative;
+    /* border-top: 2px solid; */
+  }
+
+  #nav.active #menu-bars {
+    border-top-color: transparent;
+  }
+
+  #nav.active #menu-bars::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  
+  #nav.active #menu-bars::before {
+    transform: rotate(135deg);
   }
 
   #contacts {
